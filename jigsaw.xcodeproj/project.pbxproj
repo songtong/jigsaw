@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41F1327193710D900F91601 /* STCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E41F1326193710D900F91601 /* STCellView.m */; };
 		E4CD7FF21934945100032294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CD7FF11934945100032294 /* Foundation.framework */; };
 		E4CD7FF41934945100032294 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CD7FF31934945100032294 /* CoreGraphics.framework */; };
 		E4CD7FF61934945100032294 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CD7FF51934945100032294 /* UIKit.framework */; };
@@ -19,6 +20,9 @@
 		E4CD800D1934945100032294 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CD7FF51934945100032294 /* UIKit.framework */; };
 		E4CD80151934945100032294 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CD80131934945100032294 /* InfoPlist.strings */; };
 		E4CD80171934945100032294 /* jigsawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CD80161934945100032294 /* jigsawTests.m */; };
+		E4CD802319349A0700032294 /* STJigsawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CD802119349A0700032294 /* STJigsawViewController.m */; };
+		E4CD802419349A0700032294 /* STJigsawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CD802219349A0700032294 /* STJigsawViewController.xib */; };
+		E4CF461C1935F74A0004F240 /* panda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4CF461B1935F74A0004F240 /* panda.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E41F1325193710D900F91601 /* STCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCellView.h; sourceTree = "<group>"; };
+		E41F1326193710D900F91601 /* STCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCellView.m; sourceTree = "<group>"; };
 		E4CD7FEE1934945000032294 /* jigsaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jigsaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CD7FF11934945100032294 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E4CD7FF31934945100032294 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,10 @@
 		E4CD80121934945100032294 /* jigsawTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jigsawTests-Info.plist"; sourceTree = "<group>"; };
 		E4CD80141934945100032294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4CD80161934945100032294 /* jigsawTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jigsawTests.m; sourceTree = "<group>"; };
+		E4CD802019349A0700032294 /* STJigsawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STJigsawViewController.h; sourceTree = "<group>"; };
+		E4CD802119349A0700032294 /* STJigsawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STJigsawViewController.m; sourceTree = "<group>"; };
+		E4CD802219349A0700032294 /* STJigsawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STJigsawViewController.xib; sourceTree = "<group>"; };
+		E4CF461B1935F74A0004F240 /* panda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panda.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +117,14 @@
 		E4CD7FF71934945100032294 /* jigsaw */ = {
 			isa = PBXGroup;
 			children = (
+				E4CF461A1935F69B0004F240 /* pictures */,
 				E4CD80001934945100032294 /* STAppDelegate.h */,
 				E4CD80011934945100032294 /* STAppDelegate.m */,
+				E41F1325193710D900F91601 /* STCellView.h */,
+				E41F1326193710D900F91601 /* STCellView.m */,
+				E4CD802019349A0700032294 /* STJigsawViewController.h */,
+				E4CD802119349A0700032294 /* STJigsawViewController.m */,
+				E4CD802219349A0700032294 /* STJigsawViewController.xib */,
 				E4CD80031934945100032294 /* Images.xcassets */,
 				E4CD7FF81934945100032294 /* Supporting Files */,
 			);
@@ -142,6 +158,14 @@
 				E4CD80131934945100032294 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4CF461A1935F69B0004F240 /* pictures */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF461B1935F74A0004F240 /* panda.jpg */,
+			);
+			name = pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CF461C1935F74A0004F240 /* panda.jpg in Resources */,
 				E4CD7FFC1934945100032294 /* InfoPlist.strings in Resources */,
 				E4CD80041934945100032294 /* Images.xcassets in Resources */,
+				E4CD802419349A0700032294 /* STJigsawViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CD7FFE1934945100032294 /* main.m in Sources */,
+				E41F1327193710D900F91601 /* STCellView.m in Sources */,
+				E4CD802319349A0700032294 /* STJigsawViewController.m in Sources */,
 				E4CD80021934945100032294 /* STAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +466,7 @@
 				E4CD801C1934945100032294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4CD801D1934945100032294 /* Build configuration list for PBXNativeTarget "jigsawTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +475,7 @@
 				E4CD801F1934945100032294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
